@@ -19,4 +19,8 @@ public class TableRepository {
     public static List<Table> tables() {
         return Collections.unmodifiableList(tables);
     }
+
+    public static Table getTable(int tableNumber) {
+        return tables.get(tableNumber - 1);
+    }
 }
